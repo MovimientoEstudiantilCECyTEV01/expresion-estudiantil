@@ -1,0 +1,58 @@
+backend:
+  name: github
+  repo: MovimientoEstudiantilCECyTEV01/expresion-estudiantil
+  branch: main
+  base_url: https://TU-PROXY-OAUTH
+  auth_endpoint: auth
+
+site_url: https://movimientoestudiantilcecytev01.github.io/expresion-estudiantil/
+locale: es
+media_folder: "assets/evidencias"
+public_folder: "/assets/evidencias"
+
+collections:
+  - name: casos
+    label: Casos documentados
+    label_singular: Caso
+    folder: "_casos"
+    extension: md
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{date}} · {{title}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: Título (neutral y objetivo), name: title, widget: string }
+      - { label: Fecha del hecho, name: date, widget: datetime, date_format: "DD/MM/YYYY", time_format: false, format: "YYYY-MM-DD" }
+      - label: Categoría
+        name: categoria
+        widget: select
+        options: [Académico, Administrativo, Infraestructura, Trato y convivencia, Evaluación, Información, Otro]
+      - { label: Derecho o artículo vulnerado, name: articulo, widget: string, hint: "Ej. Art. 6 constitucional / Art. X del Reglamento" }
+      - { label: Norma o reglamento, name: norma, widget: string, required: false }
+      - label: Evidencias
+        name: evidencias
+        widget: list
+        required: false
+        summary: "{{fields.descripcion}}"
+        fields:
+          - { label: Descripción, name: descripcion, widget: string, hint: "Describe qué muestra. Sin nombres." }
+          - { label: Archivo (imagen o PDF), name: archivo, widget: file }
+      - { label: Descripción de los hechos, name: body, widget: markdown, hint: "Solo hechos: qué, cuándo, dónde. Sin nombres ni adjetivos." }
+
+  - name: paginas
+    label: Páginas
+    files:
+      - label: Inicio
+        name: inicio
+        file: index.md
+        fields:
+          - { label: Layout, name: layout, widget: hidden, default: default }
+          - { label: Título, name: title, widget: string }
+          - { label: Contenido, name: body, widget: markdown }
+      - label: Derechos estudiantiles
+        name: derechos
+        file: derechos.md
+        fields:
+          - { label: Layout, name: layout, widget: hidden, default: default }
+          - { label: Título, name: title, widget: string }
+          - { label: Contenido, name: body, widget: markdown }

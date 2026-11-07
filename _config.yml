@@ -1,0 +1,15 @@
+title: Expresión Estudiantil CECyTEV
+description: Registro formal, objetivo y anónimo de inconformidades estudiantiles.
+lang: es
+url: https://movimientoestudiantilcecytev01.github.io
+baseurl: /expresion-estudiantil
+future: true
+
+collections:
+  casos:
+    output: true
+    permalink: /casos/:name/
+
+defaults:
+  - scope: { path: "", type: casos }
+    values: { layout: caso }

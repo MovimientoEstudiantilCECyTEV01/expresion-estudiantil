@@ -1,0 +1,22 @@
+---
+layout: default
+title: Casos documentados
+permalink: /casos/
+---
+<h1>Casos documentados</h1>
+<p class="lead">Registro cronológico de hechos, descritos de forma objetiva y vinculados al derecho o norma presuntamente vulnerado.</p>
+
+{% assign lista = site.casos | sort: "date" | reverse %}
+{% if lista.size == 0 %}
+  <p>Aún no hay casos publicados.</p>
+{% endif %}
+
+<div class="cards">
+{% for c in lista %}
+  <a class="card" href="{{ c.url | relative_url }}">
+    <p class="meta">{{ c.date | date: "%d/%m/%Y" }}{% if c.categoria %} · {{ c.categoria }}{% endif %}</p>
+    <h2>{{ c.title }}</h2>
+    <p><strong>Artículo:</strong> {{ c.articulo }}</p>
+  </a>
+{% endfor %}
+</div>

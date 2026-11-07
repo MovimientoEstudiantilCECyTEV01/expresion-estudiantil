@@ -1,25 +1,26 @@
----
+﻿---
 layout: default
 title: Derechos estudiantiles
 ---
+
 # Derechos estudiantiles
 
-Referencias generales. **Verifica cada artículo contra el texto vigente** y agrega el Reglamento Escolar oficial del CECyTEV.
+Referencias generales. Verifica cada articulo contra el texto vigente y agrega el Reglamento Escolar oficial del CECyTEV.
 
-## Constitución Política de los Estados Unidos Mexicanos
-- **Art. 1:** Prohibición de toda discriminación.
-- **Art. 3:** Derecho a la educación.
-- **Art. 6:** Libertad de expresión y derecho de acceso a la información.
-- **Art. 8:** Derecho de petición.
-- **Art. 9:** Derecho de asociación pacífica.
+## Constitucion Politica de los Estados Unidos Mexicanos
+- **Art. 1:** Prohibicion de toda discriminacion.
+- **Art. 3:** Derecho a la educacion.
+- **Art. 6:** Libertad de expresion y derecho de acceso a la informacion.
+- **Art. 8:** Derecho de peticion.
+- **Art. 9:** Derecho de asociacion pacifica.
 
 ## Normativa educativa
-- Ley General de Educación.
-- Ley General de los Derechos de Niñas, Niños y Adolescentes.
-- Reglamento interno del CECyTEV *(agregar artículos específicos)*.
+- Ley General de Educacion.
+- Ley General de los Derechos de Ninas, Ninos y Adolescentes.
+- Reglamento interno del CECyTEV (agregar articulos especificos).
 
-## ¿Cómo se documenta un caso aquí?
+## Como se documenta un caso aqui?
 1. Fecha del hecho.
-2. Derecho o artículo presuntamente vulnerado.
-3. Descripción objetiva.
+2. Derecho o articulo presuntamente vulnerado.
+3. Descripcion objetiva.
 4. Evidencia sin datos personales.
